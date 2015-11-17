@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 intent.putExtra("event_date", "7月7日");
                 intent.putExtra("event_name", "たなばた");
+                intent.putExtra("lucky_number", 7);
 
                 startActivity(intent);
             }

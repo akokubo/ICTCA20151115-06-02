@@ -15,7 +15,8 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String event_date = intent.getStringExtra("event_date");
         String event_name = intent.getStringExtra("event_name");
+        int lucky_number = intent.getIntExtra("lucky_number", 0);
 
-        Toast.makeText(getApplicationContext(), event_date + ":" + event_name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), event_date + ":" + event_name + ":" + lucky_number, Toast.LENGTH_SHORT).show();
     }
 }
